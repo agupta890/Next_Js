@@ -1,4 +1,15 @@
 import Image from "next/image"
+import web from '@/public/web.jpg'
+
+export const metadata = {
+    title:"Service Page",
+    description:"This is our service page",
+    authors:[{name:"Ansh Gupta",url:"ansh.com"},{name:"Tejveer Singh"}],
+    keywords:["web service","web development"],
+    icons:{
+        icon:"/images/logo.png"
+    }
+}
 const Services = ()=>{
     return(
         <>
@@ -17,7 +28,7 @@ const Services = ()=>{
         <div className="w-60 h-60 bg-white p-6 rounded-lg">
             {/* image box */}
             <div className="w-full h-full border-2 rounded-full flex justify-between items-center mx-auto mb-4 bg-blue-400 relative">
-                <Image src='/web.jpg' alt="web" fill={true}/>
+                <Image src={web} alt="web" fill={true} placeholder="blur" blurDataURL=""/>
             </div>
             <h3 className="text-black">Social media marketing</h3>
             <p className="text-black">Our main sevice the web devlopment we develop the website for the brands.</p>

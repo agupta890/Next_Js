@@ -1,5 +1,5 @@
 const Home =()=>{
-  return <h1>hi i am learning next js</h1>
+  return <h1 className="font-roboto">hi i am learning next js</h1>
 }
 
 export default Home
