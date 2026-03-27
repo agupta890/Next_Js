@@ -20,6 +20,7 @@ const Home =()=>{
   return <>
   <h1 className="font-roboto">hi i am learning next js</h1>
   <button className="bg-yellow-400" onClick={()=>alert("hi")}>Click me</button>
+
   {
     data.map((el)=>{
       return <li>{el.title}</li>

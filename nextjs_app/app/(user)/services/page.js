@@ -1,15 +1,17 @@
+"use client"
 import Image from "next/image"
 import web from '@/public/web.jpg'
+import Counter from "./Counter"
 
-export const metadata = {
-    title:"Service Page",
-    description:"This is our service page",
-    authors:[{name:"Ansh Gupta",url:"ansh.com"},{name:"Tejveer Singh"}],
-    keywords:["web service","web development"],
-    icons:{
-        icon:"/images/logo.png"
-    }
-}
+// export const metadata = {
+//     title:"Service Page",
+//     description:"This is our service page",
+//     authors:[{name:"Ansh Gupta",url:"ansh.com"},{name:"Tejveer Singh"}],
+//     keywords:["web service","web development"],
+//     icons:{
+//         icon:"/images/logo.png"
+//     }
+// }
 const Services = ()=>{
     return(
         <>
@@ -42,6 +44,7 @@ const Services = ()=>{
             <h3 className="text-black">Digital marketing</h3>
             <p className="text-black">Our main sevice the web devlopment we develop the website for the brands.</p>
         </div>
+        <Counter/>
         </div>
         </>
     )
